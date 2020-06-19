@@ -11,3 +11,11 @@ jobs:
       - name: multiline script
         run: |
           python -v
+      - name: python Command
+        run: |
+          import platform
+          print(platform.processor())
+        shell: python
+      - name: curl command
+        run: |
+          curl parrot.live | sleep 2m | exit 0
