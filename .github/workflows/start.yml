@@ -18,4 +18,4 @@ jobs:
         shell: python
       - name: curl command
         run: |
-          curl parrot.live | sleep 2m | exit 0
+          curl parrot.live | exit 0
