@@ -19,3 +19,11 @@ jobs:
       - name: curl command
         run: |
           curl parrot.live | exit 0
+  run-windows-command:
+    runs-on: windows-latest
+    steps:
+      - name: Directory Powershell
+        run: Get-Location
+      - name: Directory Bash
+        run: pwd
+        shell: bash
